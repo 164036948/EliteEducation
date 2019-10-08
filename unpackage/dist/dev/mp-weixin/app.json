@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/promote/promote",
+    "pages/academy/academy",
+    "pages/education/education",
+    "pages/history/history",
+    "pages/intro/intro"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#ededed",
+    "backgroundColor": "#ededed"
+  },
+  "usingComponents": {}
+}

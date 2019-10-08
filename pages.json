@@ -1,0 +1,46 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "8.26微信公众号"
+			}
+		}
+	    ,{
+            "path" : "pages/promote/promote",
+            "style" : {
+				"navigationBarTitleText": "学历提升"
+			}
+        }
+        ,{
+            "path" : "pages/academy/academy",
+            "style" : {
+				"navigationBarTitleText": "院校详情"
+			}
+        }
+        ,{
+            "path" : "pages/education/education",
+            "style" : {
+				"navigationBarTitleText": "学历教育"
+			}
+        }
+        ,{
+            "path" : "pages/history/history",
+            "style" : {
+				"navigationBarTitleText": "历史信息"
+			}
+        }
+        ,{
+            "path" : "pages/intro/intro",
+            "style" : {
+				"navigationBarTitleText": "公司简介"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ededed",
+		"backgroundColor": "#ededed"
+	}
+}

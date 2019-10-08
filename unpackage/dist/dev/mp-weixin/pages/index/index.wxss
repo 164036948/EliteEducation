@@ -1,0 +1,12 @@
+
+.content{
+	height: 100vh;
+}
+.mid{
+	background-color: #ededed;
+	border-top: #d2d2d2 1rpx solid;
+}
+.tabbar{
+	height: 100rpx;
+}
+

@@ -1,0 +1,14 @@
+
+.center{
+	height: 520rpx;
+	padding-bottom: 40rpx;
+}
+.center_text{
+	 width: 675rpx;
+	 height: 185rpx;
+	 line-height: 38rpx;
+	 overflow:hidden;
+	 -o-text-overflow:ellipsis;
+	    text-overflow:ellipsis;
+}
+

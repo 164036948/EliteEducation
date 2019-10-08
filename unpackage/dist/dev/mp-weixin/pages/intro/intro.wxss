@@ -1,0 +1,39 @@
+
+page{
+	background-color: #ededed;
+}
+.swiper {
+	height: 450rpx;
+}
+.swiper-item {
+	height: 450rpx;
+}
+.center{
+	background-color: #fff;
+}
+.center_top{
+	padding-left: 30rpx;
+	height: 75rpx;
+}
+.center_center{
+	width: 660rpx;
+	height: 230rpx;
+	line-height: 38rpx;
+	font-size: 30rpx;
+	overflow:hidden;
+	-o-text-overflow:ellipsis;
+	   text-overflow:ellipsis;
+	padding-left: 50rpx;
+}
+.center_down{
+	padding-right: 20rpx;
+}
+.down{
+	padding-top: 10rpx;
+}
+.down_top{
+	background-color: #FFFFFF;
+	height: 70rpx;
+	padding-left: 30rpx;
+}
+
