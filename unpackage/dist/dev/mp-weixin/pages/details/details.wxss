@@ -10,6 +10,7 @@
 	overflow:hidden;
 	-o-text-overflow:ellipsis;
 	   text-overflow:ellipsis;
+	color: #666;
 }
 .down_center_image{
 	height: 300rpx;

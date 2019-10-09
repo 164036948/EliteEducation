@@ -119,6 +119,7 @@
 		overflow:hidden;
 		text-overflow:ellipsis;
 		padding-left: 50rpx;
+		color: #666;
 	}
 	.center_down{
 		padding-right: 20rpx;

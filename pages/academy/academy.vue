@@ -42,10 +42,11 @@
 		padding-bottom: 40rpx;
 	}
 	.center_text{
-		 width: 675rpx;
-		 height: 184rpx;
-		 line-height: 38rpx;
-		 overflow:hidden;
-		 text-overflow:ellipsis;
+		color: #666;
+		width: 675rpx;
+		height: 184rpx;
+		line-height: 38rpx;
+		overflow:hidden;
+		text-overflow:ellipsis;
 	}
 </style>

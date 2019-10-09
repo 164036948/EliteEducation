@@ -52,7 +52,7 @@
 						<text style="font-weight: 700; font-size: 35rpx;">{{submodule.titletext}}</text>
 					</view>
 					<view class="down_center_left_center">
-						<text style="color: #464646;">{{submodule.contenttext}}</text>
+						<text style="color: #666;">{{submodule.contenttext}}</text>
 					</view>
 					<!-- 跳转界面 -->
 					<view @click="academyopen(index2)" class="down_center_left_down" style="align-self: flex-end ;-webkit-align-self: flex-end ;">
@@ -139,7 +139,7 @@
 		height: 30rpx;
 		width: 296rpx;
 		padding-bottom: 18rpx;
-		color: #464646;
+		color: #666;
 		overflow:hidden;
 		text-overflow:ellipsis;
 	}

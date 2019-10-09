@@ -44,6 +44,7 @@
 	.center_text{
 		 width: 675rpx;
 		 height: 184rpx;
+		 color: #666;
 		 line-height: 38rpx;
 		 overflow:hidden;
 		 text-overflow:ellipsis;

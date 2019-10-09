@@ -53,6 +53,7 @@
 		line-height: 39rpx;
 		overflow:hidden;
 		text-overflow:ellipsis;
+		color: #666;
 	}
 	.down_center_image{
 		height: 300rpx;
