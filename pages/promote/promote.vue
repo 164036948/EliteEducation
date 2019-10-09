@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<!-- 顶部图片轮换 -->
 		<view class="top">
 			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
 				<swiper-item>
@@ -8,46 +9,59 @@
 					</view>
 				</swiper-item>
 				<swiper-item>
-					<view class="swiper-item uni-bg-green">B</view>
+					<view class="swiper-item">
+						<image src="../../static/EliteEducation.jpg" mode="scaleToFill" style="height: 300rpx; width: 100%;"></image>
+					</view>
 				</swiper-item>
 			</swiper>
 		</view>
+		<!-- 中间学历教育模块 -->
 		<view class="center uni-flex uni-row">
+			<!-- 图片 -->
 			<view class="center-left uni-flex" style="-webkit-justify-content: center;justify-content: center;-webkit-align-items: center;align-items: center;">
 				<image src="../../static/e1.jpg" mode="scaleToFill" style="height: 200rpx; width: 300rpx;"></image>
 			</view>
+			<!-- 文本内容 -->
 			<view class="center-right uni-flex" style="-webkit-justify-content: center;justify-content: center;-webkit-align-items: center;align-items: center;">
 				<view class="center-right-content uni-flex uni-column">
+					<!-- 文本内容 -->
 					<view class="center-right-content-top uni-flex uni-column" style="-webkit-justify-content: flex-start;justify-content: flex-start;">
-						<text style="font-weight: 700; font-size: 30rpx;padding-bottom: 5rpx;">学历教育</text>
+						<text style="font-weight: 700; font-size: 35rpx;padding-bottom: 5rpx;">学历教育</text>
 						<text class="center-right-content-top-text">为企业输送高质量人才</text>
 						<text class="center-right-content-top-text">为企业输送高质量人才</text>
 						<text class="center-right-content-top-text">为企业输送高质量人才</text>
 					</view>
+					<!-- 页面跳转 -->
 					<view @click="education" class="center-right-content-down uni-flex" style="-webkit-justify-content: flex-end;justify-content: flex-end;">
 						<text style="color: red;">查看详情>></text>
 					</view>
 				</view>
 			</view>
 		</view>
-		<view class="down" v-for="(n,index1) in ns" :key="index1">
+		<!-- 底部内容循环输出 -->
+		<view class="down" v-for="(title,index1) in titles" :key="index1">
+			<!-- 标题 -->
 			<view class="down_top uni-flex" style="-webkit-justify-content: center;justify-content: center;-webkit-align-items: center;align-items: center;">
-				<text style="font-weight: 700; font-size: 30rpx;">{{n.name}}</text>
+				<text style="font-weight: 700; font-size: 35rpx;">{{title.name}}</text>
 			</view>
-			<view v-for="(imagsrc,index2) in imagesrcs" :key="index2" class="down_center uni-flex">
+			<!-- 模块内的循环输出 -->
+			<view v-for="(submodule,index2) in submodules" :key="index2" class="down_center uni-flex">
 				<view class="down_center_left uni-flex uni-column" >
+					<!-- 文本内容 -->
 					<view class="down_center_left_top">
-						<text style="font-weight: 700; font-size: 30rpx;">清华大学</text>
+						<text style="font-weight: 700; font-size: 35rpx;">{{submodule.titletext}}</text>
 					</view>
 					<view class="down_center_left_center">
-						<text style="color: #464646;">学校位于五道口学校位于五道口学校位于五道口</text>
+						<text style="color: #464646;">{{submodule.contenttext}}</text>
 					</view>
+					<!-- 跳转界面 -->
 					<view @click="academyopen(index2)" class="down_center_left_down" style="align-self: flex-end ;-webkit-align-self: flex-end ;">
 						<text style="color: red;">查看更多>></text>
 					</view>
 				</view>
+				<!-- 图片 -->
 				<view class="down_center_right">
-					<image :src="imagsrc.src" mode="scaleToFill" style="height: 160rpx; width: 220rpx;"></image>
+					<image :src="submodule.src" mode="scaleToFill" style="height: 160rpx; width: 220rpx;"></image>
 				</view>
 			</view>
 			
@@ -63,37 +77,31 @@
 				autoplay: true,
 				interval: 2000,
 				duration: 500,
-				ns : [{
+				titles : [{
 					name : '大学专利'
 				},
 				{
 					name : '职校学历'
 				}],
-				imagesrcs :[{
-					src : '../../static/e2.jpg'
+				submodules :[{
+					titletext : '清华大学',
+					contenttext : '学校位于五道口学校位于五道口学校位于五道口',
+					src : '../../static/e2.jpg',
+					url : '../academy/academy'
 				},
 				{
-					src : '../../static/e2.jpg'
+					titletext : '清xx学',
+					contenttext : '学校位于五道口学校位于五道口学校位于五道口',
+					src : '../../static/e2.jpg',
+					url : '../history/history'
 				}]
 			}
 		},
 		methods: {
 			academyopen(e){
-				switch (e){
-					case 0:
-						uni.navigateTo({
-							url: '../academy/academy',
-						});
-						break;
-					case 1:
-						uni.navigateTo({
-							url: '../history/history',
-						});
-						break;
-					default:
-						break;
-				}
-				
+				uni.navigateTo({
+					url: this.submodules[e].url
+				});
 			},
 			education(){
 				uni.navigateTo({
@@ -132,6 +140,8 @@
 		width: 296rpx;
 		padding-bottom: 18rpx;
 		color: #464646;
+		overflow:hidden;
+		text-overflow:ellipsis;
 	}
 	.down{
 		padding-bottom: 10rpx;

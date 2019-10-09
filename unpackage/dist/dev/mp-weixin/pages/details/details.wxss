@@ -1,0 +1,18 @@
+
+.down_title{
+	padding-left: 30rpx;
+}
+.down_center_text{
+	/* width: 690rpx; */
+	margin: 0 30rpx;
+	height: 308rpx;
+	line-height: 39rpx;
+	overflow:hidden;
+	-o-text-overflow:ellipsis;
+	   text-overflow:ellipsis;
+}
+.down_center_image{
+	height: 300rpx;
+	padding: 30rpx 0;
+}
+

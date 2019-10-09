@@ -5,7 +5,9 @@
     "pages/academy/academy",
     "pages/education/education",
     "pages/history/history",
-    "pages/intro/intro"
+    "pages/intro/intro",
+    "pages/news/news",
+    "pages/details/details"
   ],
   "subPackages": [],
   "window": {

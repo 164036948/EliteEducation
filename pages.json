@@ -36,6 +36,18 @@
 				"navigationBarTitleText": "公司简介"
 			}
         }
+        ,{
+            "path" : "pages/news/news",
+            "style" : {
+				"navigationBarTitleText": "新闻动态"
+			}
+        }
+        ,{
+            "path" : "pages/details/details",
+            "style" : {
+				"navigationBarTitleText": "简介详情"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -155,17 +155,48 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
-    return {};
+    return {
+      top1: '',
+      top2: '',
+      see: false,
+      windowHeight: '' };
 
   },
-  onLoad: function onLoad() {
+  onReady: function onReady() {var _this = this;
+    uni.getSystemInfo({
+      success: function success(res) {
+        _this.top1 = 750 * res.windowHeight / res.windowWidth - 100 - 84 - 84 + "rpx";
+        _this.top2 = 750 * res.windowHeight / res.windowWidth - 100 - 84 + "rpx";
+        _this.windowHeight = 750 * res.windowHeight / res.windowWidth + "rpx";
+        // console.log(this.windowHeight);
+      } });
+
 
   },
   methods: {
-    openElevate: function openElevate() {
+    altersee: function altersee() {
+      if (this.see == false) {
+        this.see = true;
+      } else {
+        this.see = false;
+      }
+    },
+    openPromote: function openPromote() {
       uni.navigateTo({
         url: '../promote/promote' });
 

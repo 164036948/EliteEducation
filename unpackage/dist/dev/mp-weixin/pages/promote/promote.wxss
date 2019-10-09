@@ -26,6 +26,9 @@
 	width: 296rpx;
 	padding-bottom: 18rpx;
 	color: #464646;
+	overflow:hidden;
+	-o-text-overflow:ellipsis;
+	   text-overflow:ellipsis;
 }
 .down{
 	padding-bottom: 10rpx;

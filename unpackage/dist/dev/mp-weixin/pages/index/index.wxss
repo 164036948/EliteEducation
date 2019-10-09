@@ -1,12 +1,23 @@
 
-.content{
-	height: 100vh;
-}
 .mid{
 	background-color: #ededed;
 	border-top: #d2d2d2 1rpx solid;
 }
 .tabbar{
 	height: 100rpx;
+}
+.cover-view1,.cover-view2 {
+	position: absolute;
+	left: 101rpx;
+	width: 217rpx;
+	height: 85rpx;
+	line-height: 85rpx;
+	text-align: center;
+}
+.cover-view1{
+	background-color: #f8f8f8;
+}
+.cover-view2{
+	background-color: #aeaeae;
 }
 
